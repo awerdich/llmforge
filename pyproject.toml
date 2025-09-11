@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=41", 
+            "wheel", 
+            "setuptools-git-versioning>=2.0,<3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llmforge"
+dynamic = ["version"]
+description = "LLMs on HMS servers"
+readme = "README.md"
+authors = [
+    { name = "Andreas Werdich", email = "andreas_werdich@hms.harvard.edu" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.uv]
+python-preference = "only-system"
+
+[tool.setuptools.package-data]
+llmforge = ["VERSION"]
+
+[project.scripts]
+llmforge = "llmforge:main"
