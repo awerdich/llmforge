@@ -21,10 +21,6 @@ python-preference = "only-system"
 [project.scripts]
 llmforge = "llmforge:main"
 
-[tool.setuptools.package-data]
-# include VERSION file to a package
-llmforge = ["VERSION"]
-
 [tool.setuptools]
 # this package will read some included files in runtime, avoid installing it as .zip
 zip-safe = false
@@ -32,3 +28,7 @@ zip-safe = false
 [tool.setuptools-git-versioning]
 enabled = true
 version_file = "llmforge/VERSION"
+
+[tool.setuptools.package-data]
+# include VERSION file to a package
+llmforge = ["VERSION"]
