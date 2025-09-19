@@ -1,2 +1,3 @@
-# Data directory
 DATA_DIR="/app/data"
+CONTAINER_NAME=Llama3-8B-Instruct
+NGC_API_KEY=$NGC_API_KEY
