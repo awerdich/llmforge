@@ -28,6 +28,7 @@ services:
       - .:/app
       - app_data:/app/data
 
+
 volumes:
   app_data:
     external: false
